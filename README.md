@@ -31,3 +31,6 @@ Run migrations:
 Dump data:
 - `sudo mysql -p -u colegio colegio < dump-colegio-202012280155.sql`
 
+
+### Live demo can be seen here: [https://wg-anra.bid/alumnoscrud/](https://wg-anra.bid/alumnoscrud/)
+
