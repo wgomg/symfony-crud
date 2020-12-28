@@ -93,9 +93,12 @@ const EditAlumno = () => {
     </option>
   ));
 
-  const mutation = useMutation((editedAlumno) =>
-    axios.put('/api/alumnos', editedAlumno)
-  );
+  const mutation = useMutation(async (editedAlumno) => {
+    const baseUrl =
+      process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : '';
+
+    return axios.put(baseUrl + '/api/alumnos', editedAlumno);
+  });
   const {
     isLoading: isSending,
     mutate,

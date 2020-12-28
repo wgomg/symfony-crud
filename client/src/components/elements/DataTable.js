@@ -58,9 +58,17 @@ const DataTable = ({ data }) => {
   };
 
   const qc = useQueryClient();
-  const mutation = useMutation((id) => axios.delete('/api/alumnos/' + id), {
-    onSuccess: () => qc.invalidateQueries('alumnos')
-  });
+  const mutation = useMutation(
+    async (id) => {
+      const baseUrl =
+        process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : '';
+
+      return axios.delete(baseUrl + '/api/alumnos/' + id);
+    },
+    {
+      onSuccess: () => qc.invalidateQueries('alumnos')
+    }
+  );
   const { isLoading, mutate, error } = mutation;
 
   useEffect(() => {

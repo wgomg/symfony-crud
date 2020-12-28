@@ -52,9 +52,12 @@ const NewAlumno = () => {
     </option>
   ));
 
-  const mutation = useMutation((newAlumno) =>
-    axios.post('/api/alumnos', newAlumno)
-  );
+  const mutation = useMutation(async (newAlumno) => {
+    const baseUrl =
+      process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : '';
+
+    await axios.post(baseUrl + '/api/alumnos', newAlumno);
+  });
   const {
     isLoading: isSending,
     mutate,

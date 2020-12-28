@@ -19,8 +19,6 @@ const AlumnosList = () => {
     const baseUrl =
       process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : '';
 
-    console.log(baseUrl);
-
     return (await axios.get(baseUrl + '/api/alumnos')).data;
   });
 
@@ -70,10 +68,11 @@ const AlumnosList = () => {
             ...alumno,
             rut: alumno.rut + '-' + alumno.dv,
             curso:
-              alumno.curso.grado +
-              (alumno.curso.identificador
-                ? ' ' + alumno.curso.identificador
-                : '')
+              (alumno.curso?.grado ?? '') +
+              (alumno.curso?.identificador
+                ? '-' + alumno.curso.identificador
+                : '') +
+              (alumno.curso?.nivel ? ' / ' + alumno.curso.nivel.codigo : '')
           };
 
           delete data.dv;
