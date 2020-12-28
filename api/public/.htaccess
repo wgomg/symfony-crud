@@ -1,0 +1,20 @@
+<Limit GET HEAD POST PUT DELETE OPTIONS>
+    Require all granted
+</Limit>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} /api/
+    RewriteRule (.+) index.php?p=$1 [QSA,L]
+
+    # Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !/api/
+    RewriteRule (.+) index.html [QSA,L]
+
+</IfModule>

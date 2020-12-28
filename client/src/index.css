@@ -1,0 +1,43 @@
+:root {
+  --general-bg: #0d100f;
+  --general-font: #cecfcc;
+  /* --general-border: #4d646e;
+  --post-hashed-border: #8be2e4;
+  --card-bg: #232522;
+  --card-header-bg: #7da3b3;
+  --card-header-font: #151613;
+  --link: #8be2e4;
+  --link-visited: #436f70;
+  --link-hover: #b6e3e4;
+  --title: #a2bcc4;
+  --subtitle: #79868a;
+  --button-bg: #414340;
+  --button-font: #a7a8a6;
+  --input-bg: #373c3a;
+  --input-font: #9fafa9;
+  --admin: #ec0033;
+  --thread-title: #066606;
+  --mod: #00ec00;
+  --warning: #ec0000;
+  --success: #00ec00;
+  --separator: #484e4f;
+  --card-post-bg: #3c3d3b;
+  --muted: #658686;
+  --greentext: #b8d962;
+  --redtext: #f84747; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  background-color: var(--general-bg);
+  color: var(--general-font);
+  height: 100%;
+}

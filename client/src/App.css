@@ -1,0 +1,8 @@
+body {
+  background-color: var(--general-bg);
+  color: var(--general-font);
+}
+
+.sortColumn {
+  background-color: #ffffff;
+}
