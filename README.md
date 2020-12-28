@@ -10,7 +10,7 @@ Install:
 - `cd api && composer update -W`
 - `cd ../client && npm install` (this may take a while)
 - Edit `client/package.json` and replace `http://example.com/<example>` with the full base route for your site
-- `npm run build && cp -r build/* ../api/public/`
+- `npm run build && cp -r build/* ../api/public/` (this may also take a while)
 
 Database:
 - `sudo mysql -u root -p`
