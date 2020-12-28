@@ -113,7 +113,7 @@ const DataTable = ({ data }) => {
     { text: '#', name: 'id' },
     { text: 'Nombres', name: 'nombre' },
     { text: 'Paterno', name: 'ap_paterno' },
-    { text: 'Materno', name: 'ap_paterno' },
+    { text: 'Materno', name: 'ap_materno' },
     { text: 'RUT', name: 'rut' },
     { text: 'Dirección', name: 'direccion' },
     { text: 'Celular', name: 'celular' },
