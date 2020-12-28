@@ -1,5 +1,7 @@
 ## symfony-crud
 
+### Live demo can be seen here: [https://wg-anra.bid/alumnoscrud/](https://wg-anra.bid/alumnoscrud/)
+
 Requirements:
 - Apache2 server with php7+, php xml, mysql and rewrite support enabled
 - Composer (v2.0+) and npm (v6.14+)
@@ -30,7 +32,4 @@ Run migrations:
 
 Dump data:
 - `sudo mysql -p -u colegio colegio < dump-colegio-202012280155.sql`
-
-
-### Live demo can be seen here: [https://wg-anra.bid/alumnoscrud/](https://wg-anra.bid/alumnoscrud/)
 
