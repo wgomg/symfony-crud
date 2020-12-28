@@ -12,7 +12,6 @@
 /.web-server-pid
 ###< symfony/web-server-bundle ###
 
-/config/packages/doctrine.yaml
 /build/
 /phpunit.xml
 /web/bundles/
