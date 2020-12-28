@@ -44,6 +44,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "your-server-root-url",
-  "homepage": "your-server-root-url"
+  "proxy": "http://example.com/<example>",
+  "homepage": "http://example.com/<example>"
 }
