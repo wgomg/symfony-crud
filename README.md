@@ -1,7 +1,7 @@
 ## symfony-crud
 
 Requirements:
-- Apache server with php7+, php xml, mysql and rewrite support enabled
+- Apache2 server with php7+, php xml, mysql and rewrite support enabled
 - Composer (v2.0+) and npm (v6.14+)
 
 Install:
