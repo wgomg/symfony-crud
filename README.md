@@ -1,6 +1,6 @@
 ## symfony-crud
 
-### Live demo can be seen here: [https://wg-anra.bid/alumnoscrud/](https://wg-anra.bid/alumnoscrud/)
+### Live demo can be seen here: [https://wgomg.work/alumnoscrud/](https://wgomg.work/alumnoscrud/)
 
 Requirements:
 - Apache2 server with php7+, php xml, mysql and rewrite support enabled
